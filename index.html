@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Minutes Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Worked Minutes Tracker</h1>
+  <div class="container">
+    <div id="input-container">
+      <label for="date">Date:</label>
+      <input type="date" id="date">
+      <label for="minutes">Minutes worked:</label>
+      <input type="number" id="minutes" min="0">
+      <button id="add-entry">Add Entry</button>
+    </div>
+    <div id="display-container">
+      <h2>Worked Minutes for the Month</h2>
+      <table id="entries-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Minutes Worked</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="total-minutes">Total Minutes: 0</p>
+      <p id="total-hours">Total Hours: 0</p>
+      <p id="total-salary">Total Salary (RON): 0</p>
+      <button id="reset-data">Reset</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
